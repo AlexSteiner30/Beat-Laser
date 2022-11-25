@@ -42,6 +42,8 @@ public class Laser : MonoBehaviour
                 print("Game Over!");
                 gameManager.GameOver();
             }
+
+            print("Game Over!2");
         }
     }
 

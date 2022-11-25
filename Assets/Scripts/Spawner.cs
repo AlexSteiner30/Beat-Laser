@@ -19,9 +19,9 @@ public class Spawner : MonoBehaviour
     {
         while (gameManager.alive)
         {
-            if(speed < 0.1 && gameManager.score % 10 == 2)
+            if(speed <= 0.1 && gameManager.score % 10 == 0)
             {
-                speed++;
+                speed+=0.01f;
             }
 
             SpawnLaser(speed);
