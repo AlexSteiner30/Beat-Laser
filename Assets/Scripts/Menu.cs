@@ -1,35 +1,19 @@
 using System;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.XR;
-using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public XRController controller = null;
-    InputDevice device;
-
     private void Start()
     {
-
+        StartCoroutine(LoadNewGame());
     }
 
-    void Update()
+    IEnumerator LoadNewGame()
     {
-        XPressed();
+        yield return new WaitForSecondsRealtime(5);
 
-    }
-
-    public void XPressed()
-    {
-        bool press;
-
-        device.TryGetFeatureValue(CommonUsages.primaryButton, out press);
-
-        if(press)
-        {
-            SceneManager.LoadScene(1);
-        }
+        SceneManager.LoadScene(1);
     }
 }
