@@ -19,6 +19,11 @@ public class Spawner : MonoBehaviour
     {
         while (gameManager.alive)
         {
+            if(speed < 0.1 && gameManager.score % 10 == 2)
+            {
+                speed++;
+            }
+
             SpawnLaser(speed);
             yield return new WaitForSecondsRealtime(spawnRate);
         }

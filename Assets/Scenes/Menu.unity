@@ -222,7 +222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &134961199
 Transform:
   m_ObjectHideFlags: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[press "X" to play]'
+  m_text: '[a new game is about to start]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1364,7 +1364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58196d0989bcc4a498487799ef3f2bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1826820994}
 --- !u!1 &1327428274
 GameObject:
   m_ObjectHideFlags: 0
